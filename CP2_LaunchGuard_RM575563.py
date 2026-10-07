@@ -33,7 +33,7 @@ proximo_contato = ""
 
 # separamos as funcionalidades em funcoes para organizacao do codigo
 
-# funcao que mostra o resumo da oferta (usada em varios lugares do programa)
+# funcao que mostra o resumo da oferta 
 def mostrar_resumo_oferta():
     print("===================================================")
     print("RESUMO DA OFERTA")
@@ -263,7 +263,7 @@ while True:
         mostrar_necessidades_e_impacto()
 
     elif escolha == 2:
-        # se ja existe uma oferta, pergunta se quer sobrescrever (igual ao codigo original)
+        # se ja existe uma oferta, pergunta se quer sobrescrever 
         if oferta_salva == True:
             sobrescrever = ""
             while sobrescrever != "s" and sobrescrever != "n":
