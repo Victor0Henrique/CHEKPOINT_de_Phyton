@@ -35,7 +35,6 @@ proximo_contato = ""
 
 # funcao que mostra o resumo da oferta
 def mostrar_resumo_oferta():
-    print("===================================================")
     print("RESUMO DA OFERTA")
     print(f"Apoiador: {apoiador_nome}")
     print(f"Contato: {apoiador_contato}")
@@ -44,7 +43,6 @@ def mostrar_resumo_oferta():
     print(f"Descrição: {descricao_apoio}")
     print(f"Quantidade: {quantidade_apoio}")
     print(f"Status: {status_oferta.upper()}")
-    print("===================================================")
 
 # funcionalidade 1 - necessidades da ONG e impacto
 
@@ -230,17 +228,14 @@ def painel_equipe():
 
 print("Bem-vindo à Plataforma de Apoio da Turma do Bem!")
 print("Dentista do Bem e Apolônias do Bem: juntos, levamos sorrisos a quem mais precisa.")
-print("---------------------------------------")
 
 while True:
-    print("===================================================")
     print("MENU:")
     print("1 - NECESSIDADES E IMPACTO")
     print("2 - OFERECER APOIO")
     print("3 - ACOMPANHAR MINHA OFERTA")
     print("4 - PAINEL DA EQUIPE")
     print("5 - ENCERRAR")
-    print("===================================================")
 
     escolha = int(input("\nDigite sua escolha: "))
 
