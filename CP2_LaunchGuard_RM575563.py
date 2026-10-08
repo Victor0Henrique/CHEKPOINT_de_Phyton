@@ -33,7 +33,7 @@ proximo_contato = ""
 
 # separamos as funcionalidades em funcoes para organizacao do codigo
 
-# funcao que mostra o resumo da oferta 
+# funcao que mostra o resumo da oferta
 def mostrar_resumo_oferta():
     print("===================================================")
     print("RESUMO DA OFERTA")
@@ -182,20 +182,6 @@ def painel_equipe():
         print(f"Próximo contato: {proximo_contato}")
         print(f"Autoriza divulgação: {autoriza_divulgacao}")
 
-        # sugestoes da "IA" (feitas com regras simples). A equipe sempre revisa
-        print("\nSUGESTÕES DA IA (a equipe revisa):")
-        print(f"- Necessidade compatível: {necessidade_atendida}")
-
-        # aponta informacoes que estao faltando na oferta
-        if prazo_dias == 0:
-            print("- Informação faltante: prazo de entrega")
-        if len(descricao_apoio) < 10:
-            print("- Informação faltante: descrição mais detalhada")
-        if prazo_dias != 0 and len(descricao_apoio) >= 10:
-            print("- Nenhuma informação faltando.")
-
-        print(f"- Resposta sugerida: Olá, {apoiador_nome}! Obrigado pela oferta de apoio à Turma do Bem.")
-
         print("\nO que deseja fazer?")
         print("1 - Avançar status (prometido > confirmado > concluído)")
         print("2 - Aprovar publicação do resultado")
@@ -263,7 +249,7 @@ while True:
         mostrar_necessidades_e_impacto()
 
     elif escolha == 2:
-        # se ja existe uma oferta, pergunta se quer sobrescrever 
+        # se ja existe uma oferta, pergunta se quer sobrescrever
         if oferta_salva == True:
             sobrescrever = ""
             while sobrescrever != "s" and sobrescrever != "n":
